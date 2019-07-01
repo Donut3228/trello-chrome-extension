@@ -2,5 +2,14 @@
     "name": "Trello View Changer",
     "version": "1.0",
     "description": "Trello appearance changer",
+    "background": {
+        "scripts": [
+            "card-width.js"
+        ],
+        "persistent": false
+    },
+    "page_action": {
+        "default_popup": "popup.html"
+    },
     "manifest_version": 2
 }
