@@ -2,5 +2,45 @@
     "name": "Trello View Changer",
     "version": "1.0",
     "description": "Trello appearance changer",
+    "permissions": [
+        "activeTab",
+        "declarativeContent",
+        "storage"
+    ],
+    "background": {
+        "scripts": [
+            "card-width.js"
+        ],
+        "persistent": false
+    },
+    "page_action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "images/icons8-trello-16.png",
+            "32": "images/icons8-trello-32.png",
+            "48": "images/icons8-trello-48.png",
+            "128": "images/icons8-trello-128.png"
+        }
+    },
+    "options_page": "options/options.html",
+    "icons": {
+        "16": "images/icons8-trello-16.png",
+        "32": "images/icons8-trello-32.png",
+        "48": "images/icons8-trello-48.png",
+        "128": "images/icons8-trello-128.png"
+    },
+    "content_scripts": [
+        {
+            "css": [
+                "content/styles.css"
+            ],
+            "js": [
+                "content/content.js"
+            ],
+            "matches": [
+                "https://trello.com/*"
+            ]
+        }
+    ],
     "manifest_version": 2
 }

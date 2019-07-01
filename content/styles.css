@@ -1,0 +1,11 @@
+.window {
+  width: 90% !important;
+  max-width: max-content !important;
+  min-width: 768px !important;
+}
+
+.window-main-col {
+  width: 100% !important;
+  max-width: max-content !important;
+  min-width: 550px !important;
+}
