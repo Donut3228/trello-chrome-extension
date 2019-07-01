@@ -29,5 +29,18 @@
         "48": "images/get_started48.png",
         "128": "images/get_started128.png"
     },
+    "content_scripts": [
+        {
+            "css": [
+                "content/styles.css"
+            ],
+            "js": [
+                "content/content.js"
+            ],
+            "matches": [
+                "https://trello.com/*"
+            ]
+        }
+    ],
     "manifest_version": 2
 }
