@@ -1,0 +1,8 @@
+.window {
+  width: 98%;
+}
+
+.window-main-col {
+  width: 100%;
+  max-width: min-content;
+}
