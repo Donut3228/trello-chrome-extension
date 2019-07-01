@@ -2,7 +2,11 @@
     "name": "Trello View Changer",
     "version": "1.0",
     "description": "Trello appearance changer",
-    "permissions": ["declarativeContent", "storage"],
+    "permissions": [
+        "activeTab",
+        "declarativeContent",
+        "storage"
+    ],
     "background": {
         "scripts": [
             "card-width.js"
